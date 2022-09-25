@@ -16,7 +16,11 @@ app.get('/product', (req, res) => {
     
     `)
 })
-
+app.use((req, res, next) => {
+    res.status(400).json({
+        message: "Page not found"
+    })
+})
 app.listen(port, (req, res) => {
     console.log('server is running');
 })
