@@ -1,7 +1,7 @@
 const products = require("../models/products.models");
 const path = require('path');
 exports.getProducts = (req, res) => {
-    res.sendFile(path.join(__dirname + "/../views/index.html"))
+    res.sendFile(path.join(__dirname + "/../views/product.html"))
 };
 
 exports.saveProducts = (req, res) => {
